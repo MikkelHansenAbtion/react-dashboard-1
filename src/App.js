@@ -41,14 +41,12 @@ function App() {
     // };
 
     return (
-        <>
+        <div className='content'>
             <Header />
-            <div className='content'>
-                <EntryForm onAdd={AddMatrixEntry} />
-                <Matrix rows={entries} />
-            </div>
+            <EntryForm onAdd={AddMatrixEntry} />
+            <Matrix rows={entries} />
             <Footer />
-        </>
+        </div>
     );
 }
 

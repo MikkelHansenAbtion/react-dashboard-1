@@ -3,20 +3,21 @@ $header-footer-height: 100px;
 * {
     box-sizing: border-box;
     text-align: center;
+    align-items: center;
 }
 
 header,
 footer {
     height: $header-footer-height;
-    position: absolute;
     width: 100%;
 }
 
 .content {
-    margin: $header-footer-height 5%;
-    top: $header-footer-height;
-    bottom: $header-footer-height;
-    position: absolute;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 5%;
     width: 90%;
 }
 
