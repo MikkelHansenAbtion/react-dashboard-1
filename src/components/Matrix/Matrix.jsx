@@ -20,13 +20,20 @@ const entries = [
 
 const Matrix = () => {
     return (
-        <div className='matrix'>
+        <table className='matrix'>
+            <tr>
+                <th>Id</th>
+                <th>Text</th>
+                <th>Time</th>
+            </tr>
             {entries.map((entry) => (
-                <p>
-                    Id: {entry.id}, text: {entry.text}, Time: {entry.time}
-                </p>
+                <tr>
+                    <td>{entry.id}</td>
+                    <td>{entry.text}</td>
+                    <td>{entry.time}</td>
+                </tr>
             ))}
-        </div>
+        </table>
     );
 };
 
