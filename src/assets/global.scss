@@ -1,3 +1,25 @@
+$header-footer-height: 100px;
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+header,
+footer {
+    height: $header-footer-height;
+    position: absolute;
+    width: 100%;
+}
+
+.content {
+    margin: $header-footer-height 5%;
+    top: $header-footer-height;
+    bottom: $header-footer-height;
+    position: absolute;
+    width: 90%;
+}
+
 h1 {
     font-size: 4rem;
 }
