@@ -1,38 +1,24 @@
 import "./Matrix.scss";
 
-const entries = [
-    {
-        id: 1,
-        text: "One",
-        time: "Yesterday",
-    },
-    {
-        id: 2,
-        text: "Two",
-        time: "Today",
-    },
-    {
-        id: 3,
-        text: "Three",
-        time: "Tomorrow",
-    },
-];
-
-const Matrix = () => {
+const Matrix = ({ rows }) => {
     return (
         <table className='matrix'>
-            <tr>
-                <th>Id</th>
-                <th>Text</th>
-                <th>Time</th>
-            </tr>
-            {entries.map((entry) => (
+            <thead>
                 <tr>
-                    <td>{entry.id}</td>
-                    <td>{entry.text}</td>
-                    <td>{entry.time}</td>
+                    <th>Id</th>
+                    <th>Text</th>
+                    <th>Time</th>
                 </tr>
-            ))}
+            </thead>
+            <tbody>
+                {rows.map((entry) => (
+                    <tr key={("key_", entry.id)}>
+                        <td>{entry.id}</td>
+                        <td>{entry.text}</td>
+                        <td>{entry.time}</td>
+                    </tr>
+                ))}
+            </tbody>
         </table>
     );
 };
