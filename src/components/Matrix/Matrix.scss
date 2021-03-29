@@ -1,14 +1,17 @@
 .matrix {
-    width: 100%;
-    flex: 1;
+  width: 100%;
+  flex: 1;
 
-    tr > th {
-        background: rgb(97, 97, 97);
-    }
-    tr:nth-child(odd) {
-        background: #ccc;
-    }
-    tr:nth-child(even) {
-        background: #fff;
-    }
+  tr > th {
+    background: rgb(97, 97, 97);
+  }
+  tr:nth-child(odd) {
+    background: #ccc;
+  }
+  tr:nth-child(even) {
+    background: #fff;
+  }
+  i.clickable {
+    cursor: pointer;
+  }
 }
